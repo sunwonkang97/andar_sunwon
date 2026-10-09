@@ -30,7 +30,7 @@
         </div>
         <div class="foot">
           <div class="when">
-            <p>${esc(C.EVENT.period)}<br />${esc(C.EVENT.place)}</p>
+            <p>${esc(C.EVENT.period)}</p>
           </div>
         </div>
       </section>`;
