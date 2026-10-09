@@ -12,7 +12,10 @@ window.APP_CONFIG = {
   // 사이즈표 이미지 경로 (10/7 확정 전달 예정). 비워두면 안내 문구가 표시됩니다.
   SIZE_CHART_IMAGE: "",
 
-  // 시간표: 행 = 시간대, 열 = 날짜. 각 셀은 세션명. (time/sessions를 바꾸면 gas/Code.gs의 SCHEDULE도 같이 바꿔야 함)
+  // ※ MAX_SESSIONS / DATES / SCHEDULE / SIZES를 바꾸면 `node gas/sync.js` 실행 후 Code.gs를 재배포해야 합니다.
+
+  // 시간표: 행 = 시간대, 열 = 날짜. 각 셀은 세션명. 요일은 YEAR와 날짜로 자동 계산됩니다.
+  YEAR: 2026,
   DATES: ["10/24", "10/25"],
   SCHEDULE: [
     { time: "10:30", end: "12:00", sessions: ["STRETCH YOUR RUN", "STRETCH YOUR RUN"] },

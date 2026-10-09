@@ -7,7 +7,8 @@
 
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const sessionId = (date, time, name) => `${date} ${time} ${name}`;
-  const DOW = { "10/24": "SAT", "10/25": "SUN" };
+  const DOW_NAMES = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  const dow = (d) => { const [m, day] = d.split("/").map(Number); return DOW_NAMES[new Date(C.YEAR, m - 1, day).getDay()]; };
 
   const ICON = {
     arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
@@ -38,7 +39,7 @@
 
   function tiles() {
     const full = state.selected.length >= C.MAX_SESSIONS;
-    const days = `<div class="days"><span></span>${C.DATES.map((d) => `<div class="day"><b>${d.replace("/", ".")}</b><span>${DOW[d] || ""}</span></div>`).join("")}</div>`;
+    const days = `<div class="days"><span></span>${C.DATES.map((d) => `<div class="day"><b>${d.replace("/", ".")}</b><span>${dow(d)}</span></div>`).join("")}</div>`;
     const rows = C.SCHEDULE.map((row) => {
       const cells = row.sessions.map((name, i) => {
         const id = sessionId(C.DATES[i], row.time, name);
