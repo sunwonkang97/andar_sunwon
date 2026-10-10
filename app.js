@@ -180,10 +180,10 @@
     const days = C.MAIN_MOTION.map((d) => `
       <div class="day-col"><div class="day-tag">${esc(d.day)}</div>
         <div class="cards">${d.classes.map((m) => `
-          <div class="card">${art(m, ++n)}<div class="body"><b class="time">${esc(m.time)}</b><p>${esc(m.text)}</p></div></div>`).join("")}
+          <div class="card">${art(m, ++n)}<div class="body"><b class="time">${esc(m.time).replace(/\n/g, "<br>")}</b><p>${esc(m.text)}</p></div></div>`).join("")}
         </div></div>`).join("");
     const wide = (r, no) => `
-      <div class="card">${art(r, no)}<div class="body"><span class="tag">${esc(r.subtitle)}</span><b class="time">${esc(r.time)}</b><p>${esc(r.text)}</p></div></div>`;
+      <div class="card">${art(r, no)}<div class="body"><span class="tag">${esc(r.subtitle)}</span><b class="time">${esc(r.time).replace(/\n/g, "<br>")}</b><p>${esc(r.text)}</p></div></div>`;
     return `
       <div class="page sessions-page view">
         <div class="wrap">

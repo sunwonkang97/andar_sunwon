@@ -72,7 +72,7 @@ window.APP_CONFIG = {
 
   // 2P 클래스 정보
   INTRO: {
-    lead: ["움직임을 일상으로 확장하는 새로운 태도와 가능성,", "안다르의 첫번째 팝업이 열립니다."],
+    lead: ["움직임을 일상으로 확장하는", "새로운 태도와 가능성", "안다르의 첫번째 팝업이 열립니다."],
     sub: ["안다르 ambassador가 리드하는 다양한 클래스와 함께", "팝업에서 최초 공개되는 에어쿨링 캡슐 컬렉션이 제공됩니다."],
   },
   APPLY_DEADLINE: { date: "10.14", dow: "WED", time: "24:00" },
@@ -80,26 +80,26 @@ window.APP_CONFIG = {
   // 날짜별 클래스 (이미지는 assets/session)
   MAIN_MOTION: [
     { day: "10.24 (토)", classes: [
-      { title: "MUSIC FLOW YOGA", time: "10.24 (토) 12:30 ~14:00", text: "음악 속에서 몸의 긴장을 천천히 풀어내며, 자연스럽게 흘러가는 요가를 경험해 보세요", image: "assets/session/class-1.jpg" },
-      { title: "BURN BOOT CAMP", time: "10.24 (토) 16:30 ~18:00", text: "온몸을 고루 사용하는 전신 트레이닝으로 힘차게 움직이며 효율적으로 에너지를 깨워요", image: "assets/session/class-2.jpg" },
+      { title: "MUSIC FLOW YOGA", time: "10.24(토)\n12:30 ~ 14:00", text: "음악 속에서 몸의 긴장을 천천히 풀어내며, 자연스럽게 흘러가는 요가를 경험해 보세요", image: "assets/session/class-1.jpg" },
+      { title: "BURN BOOT CAMP", time: "10.24(토)\n16:30 ~ 18:00", text: "온몸을 고루 사용하는 전신 트레이닝으로 힘차게 움직이며 효율적으로 에너지를 깨워요", image: "assets/session/class-2.jpg" },
     ] },
     { day: "10.25 (일)", classes: [
-      { title: "POWER PILATES", time: "10.25 (일) 12:30 ~14:00", text: "미니 짐볼의 불안정성을 활용한 매트 필라테스로 코어부터 전신까지 균형있게 만들어 보세요", image: "assets/session/class-3.jpg" },
-      { title: "MOVE & RESET YOGA", time: "10.25 (일) 16:30 ~18:00", text: "걷고 뛰는 동작에 필요한 근력을 깨우고, 이완 요가로 몸의 긴장까지 천천히 풀어 보세요", image: "assets/session/class-4.jpg" },
+      { title: "POWER PILATES", time: "10.25(일)\n12:30 ~ 14:00", text: "미니 짐볼의 불안정성을 활용한 매트 필라테스로 코어부터 전신까지 균형있게 만들어 보세요", image: "assets/session/class-3.jpg" },
+      { title: "MOVE & RESET YOGA", time: "10.25(일)\n16:30 ~ 18:00", text: "걷고 뛰는 동작에 필요한 근력을 깨우고, 이완 요가로 몸의 긴장까지 천천히 풀어 보세요", image: "assets/session/class-4.jpg" },
     ] },
   ],
   SPECIAL_DATE: "10.24 (토), 10.25 (일)",
   STRETCH_YOUR_RUN: {
     title: "STRETCH YOUR RUN",
     subtitle: "트레이닝 + 슬로우조깅 4K",
-    time: "10.24 (토), 10.25 (일) 10:30 ~ 12:00",
+    time: "10.24(토), 10.25(일)\n10:30 ~ 12:00",
     text: "하이브리드 트레이닝과 함께 성수 일대를 가볍게 달리며 스페셜 체크포인트에서 스트레칭과 음료로 잠시 여유를 즐겨보세요",
     image: "assets/session/stretch-your-run.jpg",
   },
   K_SOUND_BATH: {
     title: "K-SOUND BATH",
     subtitle: "가야금 사운드배스 + 연꽃차 세레모니 명상",
-    time: "10.24 (토) & 10.25 (일) 19:30 ~ 20:30",
+    time: "10.24(토) & 10.25(일)\n19:30 ~ 20:30",
     text: "가야금의 깊고 고요한 울림 속에서 몸과 마음의 이완을 느끼고, 따뜻한 연꽃차와 함께 지금 이 순간에 머물러 보세요",
     image: "assets/session/k-sound-bath.jpg",
   },
